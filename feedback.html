@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartoon Nostalgia - Feedback</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header id="header">Cartoon Nostalgia</header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="collection.html">Collection</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <main>
+        <section class="feedback-section">
+            <h2>Share Your Feedback 💭</h2>
+            <p>Tell us about your favorite cartoons and help us improve!</p>
+
+            <!-- Success/Error Messages -->
+            <div id="feedbackSuccess" class="success-message">
+                🎉 Thank you for your feedback! We appreciate it! 💖
+            </div>
+            <div id="feedbackError" class="error-message">
+                ⚠️ Please fill all required fields correctly.
+            </div>
+
+            <!-- Feedback Form -->
+            <form id="feedbackForm" class="feedback-form">
+
+                <label>Your Name *</label>
+                <input type="text" name="name" required placeholder="Enter your name">
+
+                <label>Email Address *</label>
+                <input type="email" name="email" required placeholder="your@email.com">
+
+                <label>Favorite Cartoon *</label>
+                <input type="text" name="favorite" required placeholder="e.g., Shin Chan, Naruto">
+
+                <label>Rate Our Collection (1-5) *</label>
+                <div class="rating-container">
+                    <div class="rating" id="ratingStars">
+                        <span class="star" data-value="1">⭐</span>
+                        <span class="star" data-value="2">⭐</span>
+                        <span class="star" data-value="3">⭐</span>
+                        <span class="star" data-value="4">⭐</span>
+                        <span class="star" data-value="5">⭐</span>
+                    </div>
+                    <input type="hidden" name="rating" id="ratingValue" required>
+                </div>
+
+                <label>Your Feedback *</label>
+                <textarea name="feedback" required
+                    placeholder="What do you love about our site? What can we improve?"></textarea>
+
+                <label>Suggest a Cartoon (Optional)</label>
+                <input type="text" name="suggestion" placeholder="e.g., Dexter's Laboratory">
+
+                <button type="submit" class="btn">Submit Feedback 🎬</button>
+            </form>
+            <!-- Animated Success Popup -->
+            <div id="successPopup" class="success-popup">
+                <div class="popup-content">
+                    <div class="popup-icon">🎉</div>
+                    <h3>Thank You!</h3>
+                    <p id="popupMessage">Your feedback has been received! 💖</p>
+                    <button onclick="closePopup()" class="popup-btn">✨ Continue</button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <a href="collection.html" class="return-link">← Back to Collection</a>
+        <p>&copy; 2025 Cartoon Nostalgia. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

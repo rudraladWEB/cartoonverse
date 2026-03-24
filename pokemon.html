@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon - Cartoon Nostalgia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header id="header">Cartoon Nostalgia</header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="collection.html">Collection</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <main>
+        <!-- 1. HERO -->
+        <section class="cartoon-hero"
+            style="background: linear-gradient(135deg, rgba(255,0,150,0.95), rgba(100,0,255,0.85));">
+            <div class="hero-content">
+                <img src="pokemon.jpg" alt="Pokémon" class="hero-image">
+                <div class="hero-info">
+                    <h1>Pokémon ⚡</h1>
+                    <div class="cartoon-stats">
+                        <span class="stat">1997-2023</span>
+                        <span class="stat">1,200+ Episodes</span>
+                        <span class="stat">⭐ 8.3/10</span>
+                    </div>
+                    <p class="tagline">"Gotta Catch 'Em All!"</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MUSIC BUTTON -->
+        <section class="music-section">
+            <button id="playTitleSong" class="music-btn">
+                🎵 Play Title Song
+            </button>
+            <audio id="titleSong" loop preload="metadata">
+                <source src="Pokémon Season 01 Opening Theme Song In Hindi [ecM4SkZIx9E].mp4" type="audio/mpeg">
+                Your browser doesn't support audio.
+            </audio>
+            <p class="music-note">Nostalgic Pokémon theme song!</p>
+        </section>
+
+        <!-- 2. ABOUT -->
+        <section class="cartoon-about">
+            <h2>About Pokémon</h2>
+            <p>
+                Ash Ketchum's epic journey to become Pokémon Master! With Pikachu
+                by his side, he travels through 8+ regions catching 1000+ Pokémon,
+                battling Gym Leaders, and chasing his dream. "I choose you!" became
+                our battle cry!
+            </p>
+        </section>
+
+        <!-- 3. FAMOUS SCENE - GRENNJA vs CHARIZARD (OFFICIAL!) -->
+        <section class="famous-scene">
+            <h2>⚡ Greninja vs Charizard!</h2>
+            <p>Kalos League Finals - Ash's ultimate battle! Official Pokémon clip!</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/5UuFlwqDyD0?rel=0&modestbranding=1&controls=1"
+                    title="Greninja Battles Charizard | Pokémon the Series: XYZ | Official Clip" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+
+        <!-- 4. CHARACTERS SLIDER -->
+        <section class="characters-slider">
+            <h2>Main Characters</h2>
+
+            <div class="char-slideshow-container">
+                <!-- Ash -->
+                <div class="charSlide fade">
+                    <img src="ash.jpg" alt="Ash">
+                    <div class="char-text">
+                        <h3>Ash Ketchum</h3>
+                        <p>Future Pokémon Master!</p>
+                    </div>
+                </div>
+
+                <!-- Pikachu -->
+                <div class="charSlide fade">
+                    <img src="pikachu.jpg" alt="Pikachu">
+                    <div class="char-text">
+                        <h3>Pikachu ⚡</h3>
+                        <p>"Pika Pika!" Best friend forever!</p>
+                    </div>
+                </div>
+
+                <!-- Misty -->
+                <div class="charSlide fade">
+                    <img src="misty.jpg" alt="Misty">
+                    <div class="char-text">
+                        <h3>Misty</h3>
+                        <p>Water Pokémon expert!</p>
+                    </div>
+                </div>
+
+                <!-- Brock -->
+                <div class="charSlide fade">
+                    <img src="brook.jpg" alt="Brock">
+                    <div class="char-text">
+                        <h3>Brock</h3>
+                        <p>Rock Gym Leader & cook!</p>
+                    </div>
+                </div>
+
+                <!-- Team Rocket -->
+                <div class="charSlide fade">
+                    <img src="teamrocket.jpg" alt="Team Rocket">
+                    <div class="char-text">
+                        <h3>Team Rocket</h3>
+                        <p>"Prepare for trouble!" Villains!</p>
+                    </div>
+                </div>
+
+                <!-- Dots -->
+                <div class="char-dots" style="text-align:center">
+                    <span class="charDot" onclick="currentCharSlide(1)"></span>
+                    <span class="charDot" onclick="currentCharSlide(2)"></span>
+                    <span class="charDot" onclick="currentCharSlide(3)"></span>
+                    <span class="charDot" onclick="currentCharSlide(4)"></span>
+                    <span class="charDot" onclick="currentCharSlide(5)"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. NOSTALGIA FACTS -->
+        <section class="nostalgia-facts">
+            <h2>🌟 Why We Miss It</h2>
+            <ul>
+                <li>"I choose you Pikachu!" = childhood dream</li>
+                <li>Poké Ball throw animation = perfection</li>
+                <li>Gym battles gave us strategy fever</li>
+                <li>Team Rocket blasting off = comedy gold</li>
+                <li>1,200 episodes across 25+ seasons!</li>
+            </ul>
+        </section>
+
+        <!-- 6. BEST EPISODES -->
+        <section class="episodes-section">
+            <h2>📺 Must-Watch Episodes</h2>
+            <div class="episode-grid">
+                <div class="episode-card">
+                    <h4>First Pokémon Battle!</h4>
+                    <p>Ash vs Misty - Pikachu's debut</p>
+                </div>
+                <div class="episode-card">
+                    <h4>Charizard Disobedience</h4>
+                    <p>Ash's strongest Pokémon rebels!</p>
+                </div>
+                <div class="episode-card">
+                    <h4>Orange League Victory!</h4>
+                    <p>Ash's first championship win!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. QUOTES -->
+        <section class="quotes-section">
+            <h2>💬 Legendary Quotes</h2>
+            <div class="quote-grid">
+                <div class="quote-card">"I choose you, Pikachu!"</div>
+                <div class="quote-card">"Gotta catch 'em all!"</div>
+                <div class="quote-card">"Prepare for trouble, and make it double!"</div>
+            </div>
+        </section>
+
+        <!-- 8. TRIVIA -->
+        <section class="trivia-section">
+            <h2>🧠 Did You Know?</h2>
+            <ul>
+                <li>1,000+ Pokémon species exist!</li>
+                <li>Ash never won official league (yet)</li>
+                <li>Pikachu refused Poké Ball initially</li>
+                <li>25+ seasons = longest anime ever</li>
+                <li>$100B+ franchise worldwide!</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <a href="collection.html" class="return-link">← Back to Collection</a>
+        <p>&copy; 2025 Cartoon Nostalgia. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

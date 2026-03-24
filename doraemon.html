@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doraemon - Cartoon Nostalgia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header id="header">Cartoon Nostalgia</header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="collection.html">Collection</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <main>
+        <!-- 1. HERO -->
+        <section class="cartoon-hero"
+            style="background: linear-gradient(135deg, rgba(0,162,255,0.95), rgba(100,200,255,0.85));">
+            <div class="hero-content">
+                <img src="doreamon.jpg" alt="Doraemon" class="hero-image">
+                <div class="hero-info">
+                    <h1>Doraemon 🔵</h1>
+                    <div class="cartoon-stats">
+                        <span class="stat">1969-2023</span>
+                        <span class="stat">2,000+ Episodes</span>
+                        <span class="stat">⭐ 8.7/10</span>
+                    </div>
+                    <p class="tagline">"Anywhere Door & Time Machine Magic!"</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MUSIC BUTTON WITH AUDIO TAG -->
+        <section class="music-section">
+            <button id="playTitleSong" class="music-btn">
+                🎵 Play Title Song
+            </button>
+            <audio id="titleSong" loop preload="metadata">
+                <source src="Doraemon - Hindi - Yume wo Kanaete Doraemon - 2009.mp3" type="audio/mpeg">
+                Your browser doesn't support audio.
+            </audio>
+            <p class="music-note">Nostalgic cartoon theme song!</p>
+        </section>
+
+        <!-- 2. ABOUT -->
+        <section class="cartoon-about">
+            <h2>About Doraemon</h2>
+            <p>
+                Blue robotic cat from the 22nd century sent to help lazy Nobita!
+                With his 4D pocket full of magical gadgets like Anywhere Door,
+                Take-copter, and Time Machine, Doraemon solves Nobita's problems
+                (and creates new ones!). Ultimate childhood companion!
+            </p>
+        </section>
+
+        <!-- 3. FAMOUS SCENE - YOUR DORAEMON VIDEO (100% WORKING) -->
+        <section class="famous-scene">
+            <h2>🎬 Best Doraemon Scene!</h2>
+            <p>From "Ye bhi tha Nobita, Wo bhi tha Nobita" - Funny classic moment!</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/9qohs_EsBtE?rel=0&modestbranding=1&controls=1"
+                    title="Doraemon Best Scene from Ye bhi tha Nobita Wo bhi tha Nobita" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+
+        <!-- 4. CHARACTERS SLIDER -->
+        <section class="characters-slider">
+            <h2>Main Characters</h2>
+
+            <div class="char-slideshow-container">
+                <!-- Nobita -->
+                <div class="charSlide fade">
+                    <img src="nobita.jpg" alt="Nobita">
+                    <div class="char-text">
+                        <h3>Nobita</h3>
+                        <p>Lazy student who fails everything!</p>
+                    </div>
+                </div>
+
+                <!-- Doraemon -->
+                <div class="charSlide fade">
+                    <img src="doreamonch.jpg" alt="Doraemon">
+                    <div class="char-text">
+                        <h3>Doraemon</h3>
+                        <p>Blue cat robot with 4D pocket!</p>
+                    </div>
+                </div>
+
+                <!-- Shizuka -->
+                <div class="charSlide fade">
+                    <img src="shisuka.jpg" alt="Shizuka">
+                    <div class="char-text">
+                        <h3>Shizuka</h3>
+                        <p>Nobita's perfect crush!</p>
+                    </div>
+                </div>
+
+                <!-- Gian -->
+                <div class="charSlide fade">
+                    <img src="gian.jpg" alt="Gian">
+                    <div class="char-text">
+                        <h3>Gian</h3>
+                        <p>Bully with amazing singing!</p>
+                    </div>
+                </div>
+
+                <!-- Suneo -->
+                <div class="charSlide fade">
+                    <img src="sunio.jpg" alt="Suneo">
+                    <div class="char-text">
+                        <h3>Suneo</h3>
+                        <p>Rich show-off friend!</p>
+                    </div>
+                </div>
+
+                <!-- Dots -->
+                <div class="char-dots" style="text-align:center">
+                    <span class="charDot" onclick="currentCharSlide(1)"></span>
+                    <span class="charDot" onclick="currentCharSlide(2)"></span>
+                    <span class="charDot" onclick="currentCharSlide(3)"></span>
+                    <span class="charDot" onclick="currentCharSlide(4)"></span>
+                    <span class="charDot" onclick="currentCharSlide(5)"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. NOSTALGIA FACTS -->
+        <section class="nostalgia-facts">
+            <h2>🌟 Why We Miss It</h2>
+            <ul>
+                <li>Anywhere Door = ultimate travel dream!</li>
+                <li>Take-copter flying was everyone's fantasy</li>
+                <li>Bamboo copter sound effect = instant nostalgia</li>
+                <li>Nobita-Shizuka love story melted hearts</li>
+                <li>2,000+ episodes spanning 50+ years!</li>
+            </ul>
+        </section>
+
+        <!-- 6. BEST EPISODES (SKIPPED TRAILER) -->
+        <section class="episodes-section">
+            <h2>📺 Must-Watch Episodes</h2>
+            <div class="episode-grid">
+                <div class="episode-card">
+                    <h4>Anywhere Door Adventure!</h4>
+                    <p>Nobita visits future Tokyo instantly</p>
+                </div>
+                <div class="episode-card">
+                    <h4>Time Machine Chaos</h4>
+                    <p>Doraemon's time travel goes wrong!</p>
+                </div>
+                <div class="episode-card">
+                    <h4>Shizuka's Birthday</h4>
+                    <p>Nobita's perfect gift plan fails</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. QUOTES -->
+        <section class="quotes-section">
+            <h2>💬 Legendary Quotes</h2>
+            <div class="quote-grid">
+                <div class="quote-card">"Nobitaaa!"</div>
+                <div class="quote-card">"4th dimensional pocket!"</div>
+                <div class="quote-card">"Take-copter go!"</div>
+            </div>
+        </section>
+
+        <!-- 8. TRIVIA -->
+        <section class="trivia-section">
+            <h2>🧠 Did You Know?</h2>
+            <ul>
+                <li>Doraemon fears mice (allergic reaction)</li>
+                <li>Original Doraemon had ears (bitten off!)</li>
+                <li>45+ movies made billions worldwide</li>
+                <li>Japan's most loved character ever</li>
+                <li>4D pocket has 1,300+ gadgets!</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <a href="collection.html" class="return-link">← Back to Collection</a>
+        <p>&copy; 2025 Cartoon Nostalgia. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cartoon Nostalgia - Home</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header id="header">
+        Cartoon Nostalgia
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="collection.html">Collection</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <main>
+
+        <section class="hero-banner">
+            <h2>🎬 Welcome to Your Childhood 🎬</h2>
+            <p>Discover the cartoons that shaped your childhood and relive magical memories</p>
+        </section>
+
+        <!-- Audio with play button (browsers block autoplay) -->
+        <audio id="welcomeAudio" src="/WhatsApp Audio 2025-11-28 at 19.21.08_6052eedf.mp3" preload="auto"></audio>
+        <div class="audio-control">
+            <button onclick="playWelcomeAudio()" class="audio-btn">
+                🎵 Play Welcome Song 🎵
+            </button>
+            <p class="audio-hint">Click to hear nostalgia!</p>
+        </div>
+
+        <!-- Nostalgic Photo + Words Section -->
+        <section class="welcome-nostalgia">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="/Oggy and the Cockroaches.horijpg.jpg" alt="Memory 1" />
+                </div>
+                <div class="mySlides fade">
+                    <img src="/permanhoro.jpg" alt="Memory 2" />
+                </div>
+                <div class="mySlides fade">
+                    <img src="/shaunthesheephori.jpg" alt="Memory 3" />
+                </div>
+                <div class="mySlides fade">
+                    <img src="/shinchan.horiwebp.jpg" alt="Memory 1" />
+                </div>
+                <div class="mySlides fade">
+                    <img src="/junglebookhori.jpg" alt="Memory 2" />
+                </div>
+                <div class="mySlides fade">
+                    <img src="/doreamonhori.jpg" alt="Memory 3" />
+                </div>
+                <div class="mySlides fade">
+                    <img src="/ben10.horijpg.jpg" alt="Memory 1" />
+                </div>
+                <div class="mySlides fade">
+                    <img src="/dragonballhori.jpg" alt="Memory 2" />
+                </div>
+                <div class="mySlides fade">
+                    <img src="/teentitansgohori.jpg" alt="Memory 3" />
+                </div>
+                <div class="mySlides fade">
+                    <img src="/beybladehori.jpg" alt="Memory 1" />
+                </div>
+                <div class="mySlides fade">
+                    <img src="/adventurehori.jpg" alt="Memory 2" />
+                </div>
+                <div class="mySlides fade">
+                    <img src="/Boboiboy.horijpg.jpg" alt="Memory 3" />
+                </div>
+                <div class="mySlides fade">
+                    <img src="/hardymarabadihori.jpg" alt="Memory 1" />
+                </div>
+                <div class="mySlides fade">
+                    <img src="/pakdam pakdaihori.jpg" alt="Memory 2" />
+                </div>
+                <div class="mySlides fade">
+                    <img src="/webarebearshori.jpg" alt="Memory 3" />
+                </div>
+
+
+                <!-- Next/Prev buttons -->
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+                <span class="dot" onclick="currentSlide(9)"></span>
+                <span class="dot" onclick="currentSlide(10)"></span>
+                <span class="dot" onclick="currentSlide(11)"></span>
+                <span class="dot" onclick="currentSlide(12)"></span>
+                <span class="dot" onclick="currentSlide(13)"></span>
+                <span class="dot" onclick="currentSlide(14)"></span>
+                <span class="dot" onclick="currentSlide(15)"></span>
+            </div>
+            <div class="slide-caption">
+                <p>Swipe through your favorite cartoon memories! 📺✨</p>
+            </div>
+            <div class="nostalgia-text">
+                <h3>Step Back into Your Childhood ✨</h3>
+                <p class="nostalgia-subtitle">Feel the magic of timeless cartoons and cherished memories from your
+                    golden days</p>
+                <div class="nostalgia-stars">⭐⭐⭐⭐⭐</div>
+            </div>
+        </section>
+        <section class="stats-section">
+            <div class="stat-box">
+                <h4>60+</h4>
+                <p>Classic Cartoons</p>
+            </div>
+            <div class="stat-box">
+                <h4>1000s</h4>
+                <p>Happy Memories</p>
+            </div>
+            <div class="stat-box">
+                <h4>∞</h4>
+                <p>Nostalgia</p>
+            </div>
+        </section>
+        <section class="why-cartoons">
+            <h3>Why We Love Cartoons ❤️</h3>
+            <div class="reasons">
+                <div class="reason">
+                    <span>🌈</span>
+                    <p>Colorful Adventures</p>
+                </div>
+                <div class="reason">
+                    <span>😂</span>
+                    <p>Endless Laughter</p>
+                </div>
+                <div class="reason">
+                    <span>🎉</span>
+                    <p>Pure Joy</p>
+                </div>
+                <div class="reason">
+                    <span>💭</span>
+                    <p>Cherished Memories</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="call-to-action">
+            <a href="collection.html" class="btn">🌟 View Cartoon Collection 🌟</a>
+        </section>
+        <section class="engagement">
+            <h3>Share Your Favorite! 📢</h3>
+            <p>Which cartoon was YOUR favorite?</p>
+            <a href="feedback.html" class="share-btn">Tell Us! 💬</a>
+
+        </section>
+
+    </main>
+
+    <footer>
+        &copy; 2025 Cartoon Nostalgia. All rights reserved.
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

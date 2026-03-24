@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shin Chan - Cartoon Nostalgia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header id="header">Cartoon Nostalgia</header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="collection.html">Collection</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <main>
+        <!-- 1. HERO -->
+        <section class="cartoon-hero">
+            <div class="hero-content">
+                <img src="shinchan.webp" alt="Shin Chan" class="hero-image">
+                <div class="hero-info">
+                    <h1>Shin Chan 🇯🇵</h1>
+                    <div class="cartoon-stats">
+                        <span class="stat">1990-2023</span>
+                        <span class="stat">1,200+ Episodes</span>
+                        <span class="stat">⭐ 8.5/10</span>
+                    </div>
+                    <p class="tagline">"Buri buri zu zu zu!"</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MUSIC BUTTON WITH AUDIO TAG -->
+        <section class="music-section">
+            <button id="playTitleSong" class="music-btn">
+                🎵 Play Title Song
+            </button>
+            <audio id="titleSong" loop preload="metadata">
+                <source src="_Shinchan_Song_Shinchan_Cartoon_Ringtone_(by Fringster.com).mp3" type="audio/mpeg">
+                Your browser doesn't support audio.
+            </audio>
+            <p class="music-note">Nostalgic cartoon theme song!</p>
+        </section>
+
+        <!-- 2. ABOUT -->
+        <section class="cartoon-about">
+            <h2>About Shin Chan</h2>
+            <p>
+                5-year-old Shin-chan from Kasukabe lives for Action Kamen, butt dances,
+                and causing chaos! With his wild imagination and naughty antics, he
+                drives his family crazy while making us laugh endlessly. A true 90s legend!
+            </p>
+        </section>
+
+        <section class="famous-scene">
+            <h2>🎬 Kazama Singing Theme Song</h2>
+            <p>Shin-chan funny moments with friends! Classic nostalgia!</p>
+            <div class="video-container">
+                <iframe width="100%" height="315"
+                    src="https://www.youtube.com/embed/P-j1ItY0Hvk?rel=0&modestbranding=1&controls=1&showinfo=0&fs=1&cc_load_policy=0&iv_load_policy=3&autohide=1"
+                    title="Shinchan Kazama Singing Theme Song" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+
+        <!-- 4. CHARACTERS SLIDER (FIXED - Homepage Style) -->
+        <section class="characters-slider">
+            <h2>Main Characters</h2>
+
+            <div class="char-slideshow-container">
+                <!-- Character Slides -->
+                <div class="charSlide fade">
+                    <img src="shinchanch.html" alt="Shin-chan">
+                    <div class="char-text">
+                        <h3>Shin-chan</h3>
+                        <p>Butt dance king & Action Kamen fan!</p>
+                    </div>
+                </div>
+
+                <div class="charSlide fade">
+                    <img src="misae.jpg" alt="Misae">
+                    <div class="char-text">
+                        <h3>Misae</h3>
+                        <p>Shin-chan's mother and a classical housewife</p>
+                    </div>
+                </div>
+
+                <div class="charSlide fade">
+                    <img src="action kamen.jpg" alt="Action Kamen">
+                    <div class="char-text">
+                        <h3>Action Kamen</h3>
+                        <p>Shin-chan's superhero idol!</p>
+                    </div>
+                </div>
+
+                <div class="charSlide fade">
+                    <img src="nene.jpg" alt="Nene">
+                    <div class="char-text">
+                        <h3>Nene-chan</h3>
+                        <p>The dramatic kindergarten queen!</p>
+                    </div>
+                </div>
+
+                <div class="charSlide fade">
+                    <img src="hiroshi.jpg" alt="Hiroshi">
+                    <div class="char-text">
+                        <h3>Hiroshi (Papa)</h3>
+                        <p>Always tired salaryman dad!</p>
+                    </div>
+                </div>
+
+                <!-- Navigation Dots -->
+                <div class="char-dots" style="text-align:center">
+                    <span class="charDot" onclick="currentCharSlide(1)"></span>
+                    <span class="charDot" onclick="currentCharSlide(2)"></span>
+                    <span class="charDot" onclick="currentCharSlide(3)"></span>
+                    <span class="charDot" onclick="currentCharSlide(4)"></span>
+                    <span class="charDot" onclick="currentCharSlide(5)"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. NOSTALGIA FACTS -->
+        <section class="nostalgia-facts">
+            <h2>🌟 Why We Miss It</h2>
+            <ul>
+                <li>Shin-chan's butt dance became worldwide meme material</li>
+                <li>Action Kamen references everywhere in 90s India</li>
+                <li>Misa-chan love stories = pure comedy gold</li>
+                <li>Kindergarten fights were too relatable</li>
+                <li>Over 1,200 episodes of childhood memories</li>
+            </ul>
+        </section>
+
+        <!-- 7. BEST EPISODES -->
+        <section class="episodes-section">
+            <h2>📺 Must-Watch Episodes</h2>
+            <div class="episode-grid">
+                <div class="episode-card">
+                    <h4>Action Kamen Forever!</h4>
+                    <p>Shin-chan becomes Action Kamen for Halloween</p>
+                </div>
+                <div class="episode-card">
+                    <h4>Elephant Dance Disaster</h4>
+                    <p>Shin-chan's dance goes viral at school festival</p>
+                </div>
+                <div class="episode-card">
+                    <h4>Misa-chan's Birthday</h4>
+                    <p>Chaos at crush's birthday celebration</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. QUOTES -->
+        <section class="quotes-section">
+            <h2>💬 Legendary Quotes</h2>
+            <div class="quote-grid">
+                <div class="quote-card">"Buri buri zu zu zu!"</div>
+                <div class="quote-card">"Action Kamen da ze!"</div>
+                <div class="quote-card">"Misa-chan, marry me!"</div>
+            </div>
+        </section>
+
+        <!-- 9. TRIVIA -->
+        <section class="trivia-section">
+            <h2>🧠 Did You Know?</h2>
+            <ul>
+                <li>Shin-chan was banned in some countries for "naughty behavior"</li>
+                <li>Butt dance inspired real dance moves worldwide</li>
+                <li>1200+ episodes = most episodes of any cartoon</li>
+                <li>Action Kamen has his own manga series</li>
+                <li>Shin-chan movie grossed $40M in Japan</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <a href="collection.html" class="return-link">← Back to Collection</a>
+        <p>&copy; 2025 Cartoon Nostalgia. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

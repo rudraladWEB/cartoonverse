@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartoon Nostalgia - Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header id="header">Cartoon Nostalgia</header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="collection.html">Collection</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <main>
+        <section class="contact-section">
+            <h2>Get In Touch 📧</h2>
+            <p>Questions? Suggestions? Let's talk about cartoons!</p>
+
+            <!-- Success/Error Messages -->
+            <div id="contactSuccess" class="success-message">
+                🎉 Message sent successfully! We'll get back to you soon! 📞
+            </div>
+            <div id="contactError" class="error-message">
+                ⚠️ Please fill all required fields correctly.
+            </div>
+
+            <!-- Contact Form -->
+            <form id="contactForm" class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+
+                <label>Your Name *</label>
+                <input type="text" name="name" required placeholder="Enter your full name">
+
+                <label>Email Address *</label>
+                <input type="email" name="email" required placeholder="your@email.com">
+
+                <label>Phone (Optional)</label>
+                <input type="tel" name="phone" placeholder="+91-XXXXXXXXXX">
+
+                <label>Subject *</label>
+                <select name="subject" required>
+                    <option value="">-- Select Subject --</option>
+                    <option value="question">General Question</option>
+                    <option value="missing">Missing Cartoon</option>
+                    <option value="issue">Report Issue</option>
+                    <option value="collaboration">Collaboration</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label>Your Message *</label>
+                <textarea name="message" required placeholder="Tell us more..." rows="6"></textarea>
+
+                <button type="submit" class="btn">Send Message 🚀</button>
+            </form>
+            <!-- Animated Success Popup -->
+            <div id="successPopup" class="success-popup">
+                <div class="popup-content">
+                    <div class="popup-icon">🎉</div>
+                    <h3>Thank You!</h3>
+                    <p id="popupMessage">Your feedback has been received! 💖</p>
+                    <button onclick="closePopup()" class="popup-btn">✨ Continue</button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <a href="collection.html" class="return-link">← Back to Collection</a>
+        <p>&copy; 2025 Cartoon Nostalgia. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
